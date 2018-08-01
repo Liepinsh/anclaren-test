@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* font size for all unnamed fonts */
+body{
+    font-size: 16px;
+}
+/* borderline under header */
+.underline{
+    border-bottom: 1px solid black;
+}
+/* product container */
+.item{
+    padding: 0;
+    margin: 10px;
+    border: 1px solid black;
+    max-width: 250px;
+    min-height: 150px;
+    overflow: hidden;
+}
+/* product description */
+.liste{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+/* checkbox position */
+.check{
+    margin: 5px 0px 0px 5px;
+    padding: 0;
+}
+/* turning off the empty row from bootstrap before and after the products */
+.row:before, .row:after {
+    display: table;
+    content: none;
+}
+/* Product add save button */
+.save button{
+    float: right;
+    width: 60px;
+}
+/* Product add item form offset */
+.item-form{
+    margin: 20px;
+    padding: 0;
+}
+/* Type switcher paragraph position */
+p{
+    margin: 0 0 10px 10px;
+}
+/* Type switcher border */
+.switcher{
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid black;
+}
+/* Switcher hiding */
+.hidden{
+    display: none;
+}
