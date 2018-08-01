@@ -88,35 +88,27 @@ session_start();
                             <div class="col-sm-7">
                                 <select id="type-selector" name="type">
                                     <option selected disabled hidden>Select a type</option>
-                                    <option data-type="disc">DVD-disc</option>
-                                    <option data-type="book">Book</option>
-                                    <option data-type="furniture">Furniture</option>
+                                    <option data-type="gold">Gold</option>
+                                    <option data-type="purse">Purse</option>
+                                    <option data-type="shirt">Shirt</option>
                                 </select>
                             </div>
                         </div>
 
                         <!-- Type switcher hidden fields -->
                         <form id="type-switcher" method="post">
-                            <!-- Size input field -->
-                            <div class="form-group row switcher hidden" id="disc-input">
-                                <label class="col-md-4 col-form-label">Size</label>
+
+                            <!-- Gold weight input field -->
+                            <div class="form-group row switcher hidden" id="gold-input">
+                                <label class="col-md-4 col-form-label">Weight</label>
                                 <div class="col-md-8">
-                                    <input value="<?php echo isset($_SESSION['size']) ? $_SESSION['size'] : ''; ?>" type="text" name="size" class="form-control" id="inputSize" placeholder="Size in MB">
+                                    <input value="<?php echo isset($_SESSION['weight']) ? $_SESSION['weight'] : ''; ?>" type="text" name="weight" class="form-control" id="inputWeight" placeholder="Weight in Kg">
                                 </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pretium, nisl vel cursus rutrum, urna augue eleifend justo, ac fringilla ligula enim sed metus. </p>
                             </div>
 
-                            <!-- Weight input field -->
-                            <div class="form-group row switcher hidden" id="book-input">
-                                <label class="col-sm-12 col-md-4 col-form-label">Weight</label>
-                                <div class="col-sm-12 col-md-8">
-                                    <input value="<?php echo isset($_SESSION['weight']) ? $_SESSION['weight'] : ''; ?>" type="text" name="weight" class="form-control" id="inputWeight" placeholder="Size in Kg">
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pretium, nisl vel cursus rutrum, urna augue eleifend justo, ac fringilla ligula enim sed metus. </p>
-                            </div>
-
-                            <!-- Furniture inputs -->
-                            <div class="form-group row switcher hidden" id="furniture-input">
+                            <!-- Purse inputs -->
+                            <div class="form-group row switcher hidden" id="purse-input">
 
                                 <!-- Height input field -->
                                 <label class="col-sm-12 col-md-4 col-form-label">Height</label>
@@ -134,6 +126,23 @@ session_start();
                                 <label class="col-sm-12 col-md-4 col-form-label">Lenght</label>
                                 <div class="col-sm-12 col-md-8">
                                     <input value="<?php echo isset($_SESSION['lenght']) ? $_SESSION['lenght'] : ''; ?>" type="text" name="lenght" class="form-control" id="inputLenght" placeholder="Lenght in mm">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pretium, nisl vel cursus rutrum, urna augue eleifend justo, ac fringilla ligula enim sed metus. </p>
+                            </div>
+                            
+                            <!-- Shirt inputs -->
+                            <div class="form-group row switcher hidden" id="shirt-input">
+
+                                <!-- Shirt size hidden fields -->
+                                <label class="col-md-4 col-form-label">Size</label>
+                                <div class="col-md-8">
+                                    <select id="type-selector-shirt" name="shirt-type">
+                                        <option selected disabled hidden>Select a size</option>
+                                        <option data-type="s">S</option>
+                                        <option data-type="m">M</option>
+                                        <option data-type="l">L</option>
+                                        <option data-type="xl">XL</option>
+                                    </select>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pretium, nisl vel cursus rutrum, urna augue eleifend justo, ac fringilla ligula enim sed metus. </p>
                             </div>
